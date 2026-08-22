@@ -1,0 +1,66 @@
+=============================================================
+Correlation: Hofstede Individualism (IDV) vs. % seeing AI as beneficial
+=============================================================
+
+	Pearson's product-moment correlation
+
+data:  df$idv and df$pct_beneficial
+t = -8.5318, df = 28, p-value = 2.831e-09
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.9264469 -0.7055777
+sample estimates:
+       cor 
+-0.8498236 
+
+
+Spearman (rank-based, robust to outliers/non-linearity):
+
+	Spearman's rank correlation rho
+
+data:  df$idv and df$pct_beneficial
+S = 8337.8, p-value = 1.808e-09
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+       rho 
+-0.8548985 
+
+
+Linear model summary:
+
+Call:
+lm(formula = pct_beneficial ~ idv, data = df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-14.200  -4.184  -1.281   3.813  13.556 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 77.63941    2.82061  27.526  < 2e-16 ***
+idv         -0.41839    0.04904  -8.532 2.83e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.715 on 28 degrees of freedom
+Multiple R-squared:  0.7222,	Adjusted R-squared:  0.7123 
+F-statistic: 72.79 on 1 and 28 DF,  p-value: 2.831e-09
+
+
+
+=============================================================
+Robustness check: does excluding the 6 less-certain IDV values change it?
+=============================================================
+n = 24 (verified-source countries only)
+
+	Pearson's product-moment correlation
+
+data:  df_verified_only$idv and df_verified_only$pct_beneficial
+t = -6.9845, df = 22, p-value = 5.203e-07
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.9241000 -0.6416656
+sample estimates:
+      cor 
+-0.830175 
+
