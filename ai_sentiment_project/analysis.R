@@ -4,37 +4,7 @@
 # Testing the individualism/collectivism explanation for the Asia-vs-West
 # AI optimism gap, using Ipsos AI Monitor 2025 and Hofstede's Individualism
 # Index (IDV)
-#
-# IMPORTANT METHODOLOGICAL NOTE: Hofstede's "Individualism" is not a single,
-# stable measure. The current official Hofstede Insights source
-# (theculturefactor.com) switched several years ago to a different underlying
-# methodology (Minkov & Kaasa, 2022) for this specific dimension. Hofstede's
-# own successor organisation (geerthofstede.com) explicitly warns this
-# produces "counter-intuitive results" and states plainly that
-# "Minkov-Kaasa-Individualism is actually a different concept than Hofstede's
-# Individualism, with different data behind it." Mixing scores from the
-# classic IBM-survey-based IDV (used in most published research) with scores
-# from this newer, methodologically distinct measure would silently combine
-# two non-comparable constructs under one column name.
-#
-# For that reason, this analysis uses ONLY the 24 countries whose classic IDV
-# score could be confirmed against a single, internally consistent
-# peer-reviewed source (see data/raw/hofstede_idv.csv). Six countries in the
-# Ipsos sentiment data (Thailand, Singapore, Ireland, Sweden, Hungary, Spain)
-# are deliberately excluded from the primary analysis because their classic
-# IDV score could not be confirmed against that same source -- see the
-# Data and Limitations section of the report for the full explanation.
-#
-# Input:  data/raw/ipsos_sentiment_2025.csv, data/raw/hofstede_idv.csv
-# Output: data/processed/*.csv, figures/*.png, report/stats_results.txt
 # =============================================================================
-
-required_packages <- c("dplyr", "readr", "ggplot2", "ggrepel", "broom")
-missing_packages <- required_packages[!sapply(required_packages, requireNamespace, quietly = TRUE)]
-if (length(missing_packages) > 0) {
-  cat("Installing missing packages:", paste(missing_packages, collapse = ", "), "\n")
-  install.packages(missing_packages)
-}
 
 library(dplyr)
 library(readr)
