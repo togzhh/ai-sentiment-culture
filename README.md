@@ -70,9 +70,4 @@ psychology that individualistic cultures tend to frame new technology as a poten
 to personal autonomy, while collectivist cultures more often frame it as a tool that helps
 people function within their social environment.
 
-## Report
-
-- **[`report/AI_Sentiment_Culture_Report.pdf`](report/AI_Sentiment_Culture_Report.pdf)**
-- **[`report/Executive_Summary.pdf`](report/Executive_Summary.pdf)**
-
 
