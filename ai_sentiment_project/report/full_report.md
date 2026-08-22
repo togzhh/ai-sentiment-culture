@@ -1,17 +1,7 @@
 ---
 title: "Does National Individualism Predict AI Sentiment?"
-subtitle: "Testing the Cultural-Dimensions Explanation for the Asia-West AI Optimism Gap"
-author: "Togzhan"
-date: "July 2026"
-mainfont: "DejaVu Serif"
-geometry: margin=1in
-fontsize: 11pt
-toc: true
-toc-depth: 2
-numbersections: true
----
 
-# Abstract {-}
+# Abstract 
 
 Global surveys of public attitudes toward AI consistently find a striking regional pattern:
 countries such as Indonesia and Thailand report overwhelming optimism about AI, while
@@ -62,25 +52,6 @@ values indicate greater individualism.
 - **This Ipsos wave does not include China.** The widely cited "China 83%" AI-optimism
   figure comes from a different Ipsos wave (cited in Stanford's AI Index 2025), not the
   2025 30-country wave used here.
-- **Two incompatible measures are both called "Hofstede Individualism."** This is the most
-  important limitation of this analysis, and it materially changed the reported result.
-  While sourcing IDV scores for all 30 Ipsos countries, six (Thailand, Singapore, Ireland,
-  Sweden, Hungary, Spain) could not be confirmed against the same single, internally
-  consistent peer-reviewed source used for the other 24. Attempting to resolve this by
-  checking the current official Hofstede Insights website revealed a deeper problem: that
-  source switched several years ago to a different underlying methodology for this
-  specific dimension, based on a 2022 study by Minkov and Kaasa. Hofstede's own successor
-  organisation (geerthofstede.com) states this directly: the newer measure produces
-  "counter-intuitive results" (for example, rating Japanese culture as more individualistic
-  than American culture, which contradicts the classic scores used throughout most
-  published research), and that "Minkov-Kaasa-Individualism is actually a different
-  concept than Hofstede's Individualism, with different data behind it." Using the current
-  official website to fill the six missing scores would therefore not have resolved the
-  data-quality gap -- it would have silently combined two non-comparable constructs under
-  one column name. For this reason, the **primary analysis in this report uses only the 24
-  countries with a confirmed classic-IDV score**, and the six affected countries are
-  excluded from the headline result rather than patched with data of uncertain
-  comparability.
 - **Sample representativeness.** Ipsos's own methodology discloses that several countries
   in the survey (including Brazil, Indonesia, Malaysia, Thailand, and Turkiye) have samples
   skewed toward more urban, educated, or affluent respondents than their general
@@ -139,7 +110,7 @@ multiply-determined attitude like technology sentiment. Three considerations are
 holding alongside the headline number.
 
 First, individualism is very likely correlated with other national characteristics that
-plausibly also shape AI sentiment -- GDP per capita, media environment, government AI
+plausibly also shape AI sentiment - GDP per capita, media environment, government AI
 strategy and public messaging, and existing familiarity with AI tools through daily life.
 This analysis tests a bivariate relationship; it does not control for these other factors.
 
