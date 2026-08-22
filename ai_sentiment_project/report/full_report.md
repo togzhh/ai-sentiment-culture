@@ -1,6 +1,3 @@
----
-title: "Does National Individualism Predict AI Sentiment?"
-
 # Abstract 
 
 Global surveys of public attitudes toward AI consistently find a striking regional pattern:
