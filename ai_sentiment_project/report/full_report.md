@@ -157,7 +157,7 @@ their social environment. Building this dataset also surfaced a genuine methodol
 finding: two incompatible measures currently share the name "Hofstede Individualism," and
 treating them as interchangeable would silently corrupt any analysis that mixes them.
 
-# References {-}
+# References
 
 Ipsos. (2025). *The Ipsos AI Monitor 2025: A 30-country Ipsos Global Advisor Survey*.
 Retrieved from ipsos.com
