@@ -1,0 +1,72 @@
+=============================================================
+PRIMARY ANALYSIS (n=24, verified classic Hofstede IDV only)
+Correlation: Hofstede Individualism (IDV) vs. % seeing AI as beneficial
+=============================================================
+
+	Pearson's product-moment correlation
+
+data:  df$idv and df$pct_beneficial
+t = -6.9845, df = 22, p-value = 5.203e-07
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.9241000 -0.6416656
+sample estimates:
+      cor 
+-0.830175 
+
+
+Spearman (rank-based, robust to outliers/non-linearity):
+
+	Spearman's rank correlation rho
+
+data:  df$idv and df$pct_beneficial
+S = 4186.4, p-value = 9.298e-07
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+       rho 
+-0.8201613 
+
+
+Linear model summary:
+
+Call:
+lm(formula = pct_beneficial ~ idv, data = df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-13.039  -4.330  -1.234   4.557  14.348 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 76.06075    3.25033  23.401  < 2e-16 ***
+idv         -0.38631    0.05531  -6.984  5.2e-07 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 6.995 on 22 degrees of freedom
+Multiple R-squared:  0.6892,	Adjusted R-squared:  0.6751 
+F-statistic: 48.78 on 1 and 22 DF,  p-value: 5.203e-07
+
+
+
+=============================================================
+FOR TRANSPARENCY ONLY -- NOT A REPORTED RESULT
+What the correlation looks like if the 6 excluded countries are added
+back in using their unconfirmed-source IDV values. This is shown only
+to document that the primary finding is not sensitive to their
+inclusion/exclusion -- it is not a valid alternative estimate, since it
+mixes potentially incompatible IDV measurement approaches.
+=============================================================
+n = 30 
+
+	Pearson's product-moment correlation
+
+data:  df_all$idv and df_all$pct_beneficial
+t = -8.5318, df = 28, p-value = 2.831e-09
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.9264469 -0.7055777
+sample estimates:
+       cor 
+-0.8498236 
+
